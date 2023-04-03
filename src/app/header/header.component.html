@@ -1,0 +1,27 @@
+
+<header class="header_menu">
+    <div class="menu_intro">
+        <div class="intro_logo">
+            <div class="logo_letter">
+                S
+            </div>
+            <p class="logo_name">Shopéame!</p>
+        </div>
+    </div>
+    <div class="menu_tab">
+            <ul class="tab-list">
+                <li [ngClass]="items[0].clase" (click)="cambiarClase('tab-list--cambio',1)" routerLink="/home">
+                    <img src="assets/nuclear.png" alt="nuclear">
+                    <p>Home</p>
+                </li>
+                <li [ngClass]="items[1].clase" (click)="cambiarClase('tab-list--cambio', 2)" routerLink="/productos">
+                    <img src="assets/wheel.png" alt="wheel">
+                    <p>Prod.</p>
+                  </li>
+                <li [ngClass]="items[2].clase" (click)="cambiarClase('tab-list--cambio',3)" routerLink="/gestion">
+                    <img src="assets/prismatic.png" alt="wheel">
+                    <p>Gestión</p>
+                </li>
+            </ul>
+    </div>
+</header>

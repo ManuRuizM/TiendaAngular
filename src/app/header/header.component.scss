@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,500;1,700;1,900&display=swap');
+
+.header_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    height: 172px;
+}
+
+.menu_intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #ffffff;
+    height: 100px;
+}
+
+.intro_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.logo_letter {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color:white;
+    background: linear-gradient(90deg, #2979FF 0%, #4C589E 100%);
+    margin-right: 10px;
+    border-radius:5px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.logo_name {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 36px;
+    color: #000000;
+}
+
+.menu_tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #FFC970;
+    height: 72px;
+}
+
+.tab-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 300px;
+}
+.tab-list li:hover {
+    background-color: #fdddab; 
+
+  }
+.tab-list li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top:5px;
+    margin:20px;
+    border-radius: 10px;
+    width: 100px;
+    height: 56px;
+}
+.tab-list--cambio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top:5px;
+    margin:20px;
+    border-radius: 10px;
+    width: 100px;
+    height: 56px;
+    background-color: #fdddab; 
+}
+.tab-list li img {
+    height: auto;
+    width: auto;
+    max-height: 40px;
+    max-width: 40px;
+}
+
+p {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 14px;
+}

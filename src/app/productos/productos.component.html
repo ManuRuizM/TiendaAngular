@@ -1,0 +1,28 @@
+<div class="main">
+    <div class="container">
+      <div class="products">
+        <div class="header">
+          <!-- <div class="header-buttons">
+            <button>Button 1</button>
+            <button>Button 2</button>
+          </div> -->
+          <div class="search-bar">
+            <input type="text" placeholder="Introduce el producto"  [(ngModel)]='buscarTexto'>
+          </div>
+        </div>
+        <div class="product-row">
+          <div class="product-col" *ngFor="let product of products | productFilter:buscarTexto">
+            <div class="card">
+              <img [src]="product.image" class="card-img-top" alt="Product Image">
+              <div class="card-body">
+                <h5 class="card-title">{{product.name}}</h5>
+                <p class="card-text">{{product.description}}</p>
+                <p class="card-text">{{product.price}} €</p>
+                <button (click)="openGestion(product)">Seleccionar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

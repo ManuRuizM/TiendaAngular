@@ -1,0 +1,42 @@
+<div class="main">
+    <div class="form">
+        <ul class="form-list">
+            <h1>Creación/edición de productos</h1>
+            <h3>Nombre del producto:</h3>
+            <li class="list-item">
+                <input class="item-input" type="text" placeholder="Por ej. Tiesto para planta"
+                    [(ngModel)]="productName">
+            </li>
+            <h3>Precio:</h3>
+            <li class="list-item">
+                <input class="item-input" type="number" placeholder="Por ej. 9.50" [(ngModel)]="productPrice">
+            </li>
+            <h3>Descripción:</h3>
+            <li class="list-item">
+                <input class="item-input" type="text" placeholder="Por ej. Lo más vendido este mes"
+                    [(ngModel)]="productDesc">
+            </li>
+            <h3>Ruta de la imagen:</h3>
+            <li class="list-item">
+                <input class="item-input" type="text" placeholder="Por ej. http://blabla.com/img.jpg"
+                    [(ngModel)]="productImage">
+            </li>
+            <h3>Opiniones:</h3>
+            <li class="list-item">
+                <input class="item-input" type="number" placeholder="Por ej. 4.28" [(ngModel)]="productRate">
+            </li>
+        </ul>
+        <div class="botonera">
+            <button class="boton-guardar" (click)="guardar()">Guardar</button>
+            <button class="boton-editar" (click)="editar()">Editar</button>
+            <button class="boton-borrar" (click)="borrar()">Borrar</button>
+        </div>
+    </div>
+    <div class="preview">
+        <h2>Preview del producto</h2>
+        <img class="preview-image" src={{productImage}} alt="{{productName}}">
+        <p class="preview-desc">Nombre: {{productName}}</p>
+        <p class="preview-price">Precio: {{productPrice}}</p>
+        <p class="preview-add"> Descripción: {{productDesc}}</p>
+    </div>
+</div>
